@@ -1,0 +1,1 @@
+const ktoraOpcja=document.getElementById("dalej");
