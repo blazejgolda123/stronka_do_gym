@@ -6,7 +6,6 @@
     <title>Track Your Day</title>
     <link rel="stylesheet" href="style.css" type="text/css"/>
     <link rel="shortcut icon" href="img/silka.png"/>
-    <script type="text/javascript" src="skrypt.js"></script>
 </head>
 <body>
     <div id="container">
@@ -36,28 +35,48 @@
                         <div>
                             <form action="">
                                 <fieldset >
-                                    <div><label><input type="radio" name="rodzaj">Trening</label></div>
-                                    <div><label><input type="radio" name="rodzaj">Ksiazki</label></div>
-                                    <div><label><input type="radio" name="rodzaj">Mood</label></div>
+                                    <div><label><input type="radio" name="opcja" value="trening">Trening</label></div>
+                                    <div><label><input type="radio" name="opcja" value="ksiazki">Ksiazki</label></div>
+                                    <div><label><input type="radio" name="opcja" value="mood">Mood</label></div>
+                                    
                                </fieldset>
                             </form>
                         </div>
                         <div id="przycisk">
-                            <input type="button" value="Dalej">
+                            <input type="button" id="dalej" value="dalej">
                         </div>
                     </fieldset>
                 </form>
             </div>
-            <div id="opis">
-                <div id="opistreningu">
-                    <form>
-                        <fieldset id="obramowanie">
-                            <legend>Dodaj Trening</legend>
-                        </fieldset>
-                    </form>
-                </div>
+            <div id="dodaj_trening">
+                <form id="posrednik">
+                    <fieldset id="pole_treningu">
+                        <legend>Dodaj trening</legend>
+                        <div id="dzien_tyg">
+                            <fieldset style="height: 500px; border-radius: 20px; border: 3px solid rgb(149, 9, 192);">
+                            <div id="day"><label><input type="radio" name="opcja" value="poniedzialek">Poniedzialek</label></div>
+                            <div id="day"><label><input type="radio" name="opcja" value="sroda">sroda</label></div>
+                            <div id="day"><label><input type="radio" name="opcja" value="piatek">piatek</label></div>
+                            </fieldset>
+                        </div>
+                        <div id="podaj_cwiczenia">
+                            <fieldset id="jakie_cwiczenie">
+                                <div><label>-Przysiady ze sztanga: <input type="text" placeholder="np. 70kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
+                                <div><label>-OHP: <input type="text" placeholder="np. 30kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
+                                <div><label>-Wyciskanie na siedzaco: <input type="text" placeholder="np. 17.5kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
+                                <div><label>-motyle: <input type="text" placeholder="np. 75kg">, ile serii: <input type="text">, ile powtorzen: <input type="text>"> </label></div>
+                                <div><label>-Wyciskanie francuskie: <input type="text" placeholder="np. 17.5kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
+                                <div><label>-Ab wheel, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
+                                <div><label>-Deska: <input type="text" placeholder="np. 30sek"></label></div>
+                            </fieldset>
+
+                        </div>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </div>
     </div>
+    <script src="skrypt.js"></script>
 </body>
 </html>
