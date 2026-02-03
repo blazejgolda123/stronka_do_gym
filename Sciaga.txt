@@ -1,4 +1,0 @@
-<b>- pogrubienie
-<br>- koniec lini
-style="text-align: left"- wyrownaj do lewej
-padding: (odstep miedzy tesktem a divem)

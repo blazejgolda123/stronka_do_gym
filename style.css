@@ -105,13 +105,65 @@ body
 }
 #day
 {
-    height: 166px;
-    display: flex;
+    height: 100px;
     align-items: center;
 }
-#podaj_cwiczenia
+#poniedzialek
 {
     height: 522px;
     margin-top: 30px;
     margin-bottom: 30px;
+    display: none;
+}
+.rozmiar input
+{
+    width: 70px;
+}
+#poniedzialek div
+{
+    height: 50px;
+    font-size: 20px;
+} 
+#przyciski
+{
+    float:left;
+    width: 720px;
+}
+#przyciszczek1
+{
+    float: left;
+    margin-left: 100px;
+    margin-right: 160px;
+    margin-top: 20px;
+}
+#przyciszczek2
+{
+    float: left;
+    margin-top: 20px;
+    margin-right: 100px;
+    margin-left: 160px;
+}
+#sroda div
+{
+    height: 50px;
+    font-size: 20px;
+}
+#sroda
+{
+    height: 522px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: none;
+}
+#piatek div
+{
+    height: 50px;
+    font-size: 20px;
+}
+#piatek
+{
+    height: 522px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: none;
 }
