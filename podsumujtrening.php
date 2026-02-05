@@ -7,14 +7,30 @@
 </head>
 <body>
     <?php
-        $ciezar=[];
+        $data=$_POST['data'];
+        $tab1=["ciezar","serii","powtorzenia"];
         $tab=["przysiad","dipy","ohp","wyciskanieFrancuskie","plank","allahy"];
-        for ($i=0; $i<6; $i++){
-            $ciezar[$i]=$_POST[$tab[$i]];
-            
+        $cwiczenia=[];
+        foreach ($tab as $nazwa) { 
+            $cwiczenia[$nazwa]=[
+            "ciezar"=>0,
+            "serii"=>0,
+            "powtorzenia"=>0,
+            ];
         }
-        echo $ciezar[1];
+        for ($i=0; $i<6; $i++){
+            for ($j=0; $j <3 ; $j++) { 
+                $cwiczenia[$tab[$i]][$tab1[$j]]=$_POST[$tab[$i]][$tab1[$j]];
+            }
+        }
+        echo $data. "<br>";
+        for ($i=0; $i < 6; $i++) { 
+            echo $tab[$i].": ";
+            for ($j=0; $j <3 ; $j++) { 
+                echo $tab1[$j].": ".$cwiczenia[$tab[$i]][$tab1[$j]].", ";
+            }
+            echo "<br>";
+        }
     ?>
 </body>
 </html>
-przysiad, 70, 3, 5

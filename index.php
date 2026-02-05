@@ -57,17 +57,17 @@
                             <div id="day"><label><input id="ktoryDzien" type="radio" name="ktoryDzien" value="poniedzialek">Poniedzialek</label></div>
                             <div id="day"><label><input id="ktoryDzien" type="radio" name="ktoryDzien" value="sroda">sroda</label></div>
                             <div id="day"><label><input id="ktoryDzien" type="radio" name="ktoryDzien" value="piatek">piatek</label></div>
-                            <div id="date"><input type="date"></div>
                             </fieldset>
                         </div>
                         <div id="poniedzialek" class="rozmiar">
                                 <fieldset id="jakie_cwiczenie">
-                                    <div><label>-Przysiady ze sztanga: <input type="text" placeholder="np. 70kg" name="przysiad">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
-                                    <div><label>-Dipy z ciezarem: <input type="text" placeholder="np. 30kg" name="dipy">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
-                                    <div><label>-ohp: <input type="text" placeholder="np. 17.5kg" name="ohp">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
-                                    <div><label>-Wyciskanie francuskie: <input type="text" placeholder="np. 17.5kg" name="wyciskanieFrancuskie">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
-                                    <div><label>-Allahy: <input type="text>" placeholder="np. 40 kg" name="allahy">,ile serii: <input type="text"> ile powtorzen: <input type="text>"> </label></div>
-                                    <div><label>-Deska: <input type="text" placeholder="np. 10kg" name="plank"> ile serii: <input type="text"> ile czasu: <input type="text"></label></div>
+                                    <div><label>-Przysiady ze sztanga: <input type="text" placeholder="np. 70kg" name="przysiad[ciezar]">, ile serii: <input type="text" name="przysiad[serii]">, ile powtorzen: <input type="text" name="przysiad[powtorzenia]"> </label></div>
+                                    <div><label>-Dipy z ciezarem: <input type="text" placeholder="np. 30kg" name="dipy[ciezar]">, ile serii: <input type="text" name="dipy[serii]">, ile powtorzen: <input type="text>" name="dipy[powtorzenia]"> </label></div>
+                                    <div><label>-ohp: <input type="text" placeholder="np. 17.5kg" name="ohp[ciezar]">, ile serii: <input type="text>" name="ohp[serii]">, ile powtorzen: <input type="text" name="ohp[powtorzenia]"> </label></div>
+                                    <div><label>-Wyciskanie francuskie: <input type="text" placeholder="np. 17.5kg" name="wyciskanieFrancuskie[ciezar]">, ile serii: <input type="text>" name="wyciskanieFrancuskie[serii]">, ile powtorzen: <input type="text" name="wyciskanieFrancuskie[powtorzenia]"> </label></div>
+                                    <div><label>-Allahy: <input type="text>" placeholder="np. 40 kg" name="allahy[ciezar]">,ile serii: <input type="text" name="allahy[serii]"> ile powtorzen: <input type="text>" name="allahy[powtorzenia]"> </label></div>
+                                    <div><label>-Deska: <input type="text" placeholder="np. 10kg" name="plank[ciezar]"> ile serii: <input type="text" name="plank[serii]" > ile czasu: <input type="text" name="plank[powtorzenia]"></label></div>
+                                    <div id="date">-Data: <input type="date" name="data" style="width: 100px;"></div>
                                 </fieldset>
                                 <div id="przyciski">
                                     <div id="przyciszczek1">
