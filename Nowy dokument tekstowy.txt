@@ -1,0 +1,14 @@
+                                        <div><label>-Przysiady ze sztanga: <input type="text" placeholder="np. 70kg" name="przysiad[ciezar]">, ile serii: <input type="text" name="przysiad[serii]">, ile powtorzen: <input type="text" name="przysiad[powtorzenia]"> </label></div>
+                                        <div><label>-Dipy z ciezarem: <input type="text" placeholder="np. 30kg" name="dipy[ciezar]">, ile serii: <input type="text" name="dipy[serii]">, ile powtorzen: <input type="text>" name="dipy[powtorzenia]"> </label></div>
+                                        <div><label>-ohp: <input type="text" placeholder="np. 17.5kg" name="ohp[ciezar]">, ile serii: <input type="text>" name="ohp[serii]">, ile powtorzen: <input type="text" name="ohp[powtorzenia]"> </label></div>
+                                        <div><label>-Wyciskanie francuskie: <input type="text" placeholder="np. 17.5kg" name="wyciskanieFrancuskie[ciezar]">, ile serii: <input type="text>" name="wyciskanieFrancuskie[serii]">, ile powtorzen: <input type="text" name="wyciskanieFrancuskie[powtorzenia]"> </label></div>
+                                        <div><label>-Allahy: <input type="text>" placeholder="np. 40 kg" name="allahy[ciezar]">,ile serii: <input type="text" name="allahy[serii]"> ile powtorzen: <input type="text>" name="allahy[powtorzenia]"> </label></div>
+                                        <div><label>-Deska: <input type="text" placeholder="np. 10kg" name="plank[ciezar]"> ile serii: <input type="text" name="plank[serii]" > ile czasu: <input type="text" name="plank[powtorzenia]"></label></div>
+                                        <div id="przyciski">
+                                            <div id="przyciszczek1">
+                                                <input type="button" id="wstecz" value="wstecz" style="width: 100px; height: 30px;">
+                                            </div>
+                                            <div id="przyciszczek2">
+                                                <input type="submit" id="przeslij" value="przeslij" style="width: 100px; height: 30px;">
+                                            </div>                                 
+                                        </div>

@@ -9,65 +9,102 @@
 </head>
 <body>
     <div id="container">
-        <div id="starter">
-            <div id="zakladka"> 
-                <img src="img/dodaj.png" width="70px" height="70px" alt="silka">
-                <b>DODAJ</b>
-            </div>
-            <div id="zakladka"> 
-                <img src="img/silka.png" width="70px" height="70px">
-                <b>SILKA</b>
-            </div>
-            <div id="zakladka"> 
-                <img src="img/book.png" width="70px" height="70px">
-                <b>KSIAZKI</b>
-            </div>
-            <div id="zakladka"> 
-                <img src="img/mood.png" width="70px" height="70px">
-                <b>MOOD</b>
-            </div>
+        <div id="reklama">
+            <img src="img/reklama.jpg">
         </div>
-        <div id="zawartosc">
-            <div id="formularz">
-                <form id="ramka" >
-                    <fieldset id="pole">
-                        <legend>Dodaj</legend>
-                        <div>
-                            <form action="">
-                                <fieldset >
-                                    <div><label><input type="radio" name="opcja" value="trening">Trening</label></div>
-                                    <div><label><input type="radio" name="opcja" value="ksiazki">Ksiazki</label></div>
-                                    <div><label><input type="radio" name="opcja" value="mood">Mood</label></div>
-                                    
-                               </fieldset>
-                            </form>
-                        </div>
-                        <div id="przycisk">
-                            <input type="button" id="dalej" value="dalej" style="width: 70px; height: 30px;">
-                        </div>
-                    </fieldset>
-                </form>
+        <div id="contencik">
+            <div id="starter">
+                <div id="zakladka">
+                    <a href="https://media1.tenor.com/m/qr4wMABsYQoAAAAd/rick-roll-wiroj.gif">
+                    <img src="img/dodaj.png" id="zdjecie" width="70px" height="70px" alt="silka">
+                    <label for="zdjecie"><b>DODAJ</b></label>
+                    </a>
+                </div>
+                <div id="zakladka"> 
+                    <img src="img/silka.png" width="70px" height="70px">
+                    <b>SILKA</b>
+                </div>
+                <div id="zakladka"> 
+                    <img src="img/book.png" width="70px" height="70px">
+                    <b>KSIAZKI</b>
+                </div>
+                <div id="zakladka"> 
+                    <img src="img/mood.png" width="70px" height="70px">
+                    <b>MOOD</b>
+                </div>
             </div>
-            <div id="dodaj_trening">
-                <form id="posrednik" action="podsumujtrening.php" method="post">
-                    <fieldset id="pole_treningu">
-                        <legend>Dodaj trening</legend>
-                        <div id="dzien_tyg">
-                            <fieldset style="height: 500px; border-radius: 20px; border: 3px solid rgb(149, 9, 192);">
-                            <div id="day"><label><input id="ktoryDzien" type="radio" name="ktoryDzien" value="poniedzialek">Poniedzialek</label></div>
-                            <div id="day"><label><input id="ktoryDzien" type="radio" name="ktoryDzien" value="sroda">sroda</label></div>
-                            <div id="day"><label><input id="ktoryDzien" type="radio" name="ktoryDzien" value="piatek">piatek</label></div>
-                            </fieldset>
-                        </div>
-                        <div id="poniedzialek" class="rozmiar">
+            <div id="zawartosc">
+                <div id="formularz">
+                    <form id="ramka" >
+                        <fieldset id="pole">
+                            <legend>Dodaj</legend>
+                            <div>
+                                <form action="">
+                                    <fieldset >
+                                        <div><label><input type="radio" name="opcja" value="trening">Trening</label></div>
+                                        <div><label><input type="radio" name="opcja" value="ksiazki">Ksiazki</label></div>
+                                        <div><label><input type="radio" name="opcja" value="mood">Mood</label></div>
+                                        
+                                </fieldset>
+                                </form>
+                            </div>
+                            <div id="przycisk">
+                                <input type="button" id="dalej" value="dalej" style="width: 70px; height: 30px;">
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="dodaj_trening">
+                    <form id="posrednik" action="podsumujtrening.php" method="post">
+                        <fieldset id="pole_treningu">
+                            <legend>Dodaj trening</legend>
+                            <div id="info" style="border-radius: 20px; border: 3px solid rgb(149, 9, 192);">
+                                <div id="dzien">
+                                    <label for="dzien_tyg" >Wybierz dzien treningowy: </label>
+                                        <select id="dzien_tyg" name="dzien">
+                                        <option id="ktoryDzien" type="radio" name="ktoryDzien" value="poniedzialek" selected>Poniedzialek</option>
+                                        <option id="ktoryDzien" type="radio" name="ktoryDzien" value="sroda">sroda</option>
+                                        <option id="ktoryDzien" type="radio" name="ktoryDzien" value="piatek">piatek</option>
+                                        </select>
+                                </div>
+                                <div id="data">
+                                    Data: <input type="date">
+                                </div>
+                            </div>
+                            <div id="dodaj">
+                                <div>
+                                <label for="cwiczenie">Wybierz cwiczenie: </label>
+                                    <select id="cwiczenie">
+                                        <option value="Przysiad ze sztanga">Przysiad ze sztanga</option>
+                                        <option value="dipy">dipy</option>
+                                        <option value="ohp">ohp</option>
+                                        <option value="wyciskanie francuskie">wyciskanie francuskie</option>
+                                    </select>
+                                </div>
+                                <div><input type="button" value="dodaj"></div>
+                            </div>
+                            <div id="rodzic">
+                                <div id="poniedzialek" class="rozmiar">
+                                        <div><label>
+
+                                        </label></div>
+                                </div>
+                            <div id="images">
+                                <img src="img/murzyn.png" alt="" width="100px" height="100px">
+                                <img src="img/reka.png" alt="" width="100px" height="100px">
+
+                            </div>
+                            </div>
+                            <div id="sroda" class="rozmiar">
                                 <fieldset id="jakie_cwiczenie">
-                                    <div><label>-Przysiady ze sztanga: <input type="text" placeholder="np. 70kg" name="przysiad[ciezar]">, ile serii: <input type="text" name="przysiad[serii]">, ile powtorzen: <input type="text" name="przysiad[powtorzenia]"> </label></div>
-                                    <div><label>-Dipy z ciezarem: <input type="text" placeholder="np. 30kg" name="dipy[ciezar]">, ile serii: <input type="text" name="dipy[serii]">, ile powtorzen: <input type="text>" name="dipy[powtorzenia]"> </label></div>
-                                    <div><label>-ohp: <input type="text" placeholder="np. 17.5kg" name="ohp[ciezar]">, ile serii: <input type="text>" name="ohp[serii]">, ile powtorzen: <input type="text" name="ohp[powtorzenia]"> </label></div>
-                                    <div><label>-Wyciskanie francuskie: <input type="text" placeholder="np. 17.5kg" name="wyciskanieFrancuskie[ciezar]">, ile serii: <input type="text>" name="wyciskanieFrancuskie[serii]">, ile powtorzen: <input type="text" name="wyciskanieFrancuskie[powtorzenia]"> </label></div>
-                                    <div><label>-Allahy: <input type="text>" placeholder="np. 40 kg" name="allahy[ciezar]">,ile serii: <input type="text" name="allahy[serii]"> ile powtorzen: <input type="text>" name="allahy[powtorzenia]"> </label></div>
-                                    <div><label>-Deska: <input type="text" placeholder="np. 10kg" name="plank[ciezar]"> ile serii: <input type="text" name="plank[serii]" > ile czasu: <input type="text" name="plank[powtorzenia]"></label></div>
-                                    <div id="date">-Data: <input type="date" name="data" style="width: 100px;"></div>
+                                    <div><label>-Martwy ciąg: <input type="text" placeholder="np. 70kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"></label></div>
+                                    <div><label>-Podciaganie z ciezarem: <input type="text" placeholder="np. 30kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"></label></div>
+                                    <div><label>-Bok barku: <input type="text" placeholder="np. 10kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
+                                    <div><label>-uginanie na biceps na modlitewniku: <input type="text" placeholder="np. 75kg">, ile serii: <input type="text">, ile powtorzen: <input type="text>"> </label></div>
+                                    <div><label>-ośle wspięcia: <input type="text" placeholder="np. 17.5kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
+                                    <div><label>-ściąganie warkocza na triceps, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
+                                    <div><label>-allahy na stojaco: <input type="text" placeholder="np. 30sek"></label></div>
+                                    <div><label>-wznosy nóg na drążku: <input type="text" placeholder="np. 10"></label></div>
                                 </fieldset>
                                 <div id="przyciski">
                                     <div id="przyciszczek1">
@@ -77,48 +114,32 @@
                                         <input type="submit" id="przeslij" value="przeslij" style="width: 100px; height: 30px;">
                                     </div>                                 
                                 </div>
-                        </div>
-                        <div id="sroda" class="rozmiar">
-                            <fieldset id="jakie_cwiczenie">
-                                <div><label>-Martwy ciąg: <input type="text" placeholder="np. 70kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"></label></div>
-                                <div><label>-Podciaganie z ciezarem: <input type="text" placeholder="np. 30kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"></label></div>
-                                <div><label>-Bok barku: <input type="text" placeholder="np. 10kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
-                                <div><label>-uginanie na biceps na modlitewniku: <input type="text" placeholder="np. 75kg">, ile serii: <input type="text">, ile powtorzen: <input type="text>"> </label></div>
-                                <div><label>-ośle wspięcia: <input type="text" placeholder="np. 17.5kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
-                                <div><label>-ściąganie warkocza na triceps, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
-                                <div><label>-allahy na stojaco: <input type="text" placeholder="np. 30sek"></label></div>
-                                <div><label>-wznosy nóg na drążku: <input type="text" placeholder="np. 10"></label></div>
-                            </fieldset>
-                            <div id="przyciski">
-                                <div id="przyciszczek1">
-                                    <input type="button" id="wstecz" value="wstecz" style="width: 100px; height: 30px;">
-                                </div>
-                                <div id="przyciszczek2">
-                                    <input type="submit" id="przeslij" value="przeslij" style="width: 100px; height: 30px;">
-                                </div>                                 
                             </div>
-                        </div>
-                        <div id="piatek" class="rozmiar">
-                            <fieldset id="jakie_cwiczenie">
-                                <div><label>-Bench press: <input type="text" placeholder="np. 70kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>">, rir: <input type="text" placeholder="np. 8"></label></div>
-                                <div><label>-T bar row: <input type="text" placeholder="np. 30kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> rir: <input type="text" placeholder="np. 8"></label></div>
-                                <div><label>-Face pull: <input type="text" placeholder="np. 10kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
-                                <div><label>-Sciąganie drązka na triceps: <input type="text" placeholder="np. 75kg">, ile serii: <input type="text">, ile powtorzen: <input type="text>"> </label></div>
-                                <div><label>-ośle wspięcia na siedząco: <input type="text" placeholder="np. 17.5kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
-                                <div><label>-plank: <input type="text>">, jaki ciezar: <input type="text>"> </label></div>
-                            </fieldset>
-                            <div id="przyciski">
-                                <div id="przyciszczek1">
-                                    <input type="button" id="wstecz" value="wstecz" style="width: 100px; height: 30px;">
+                            <div id="piatek" class="rozmiar">
+                                <fieldset id="jakie_cwiczenie">
+                                    <div><label>-Bench press: <input type="text" placeholder="np. 70kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>">, rir: <input type="text" placeholder="np. 8"></label></div>
+                                    <div><label>-T bar row: <input type="text" placeholder="np. 30kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> rir: <input type="text" placeholder="np. 8"></label></div>
+                                    <div><label>-Face pull: <input type="text" placeholder="np. 10kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
+                                    <div><label>-Sciąganie drązka na triceps: <input type="text" placeholder="np. 75kg">, ile serii: <input type="text">, ile powtorzen: <input type="text>"> </label></div>
+                                    <div><label>-ośle wspięcia na siedząco: <input type="text" placeholder="np. 17.5kg">, ile serii: <input type="text>">, ile powtorzen: <input type="text>"> </label></div>
+                                    <div><label>-plank: <input type="text>">, jaki ciezar: <input type="text>"> </label></div>
+                                </fieldset>
+                                <div id="przyciski">
+                                    <div id="przyciszczek1">
+                                        <input type="button" id="wstecz" value="wstecz" style="width: 100px; height: 30px;">
+                                    </div>
+                                    <div id="przyciszczek2">
+                                        <input type="submit" id="przeslij" value="przeslij" style="width: 100px; height: 30px;">
+                                    </div>                                 
                                 </div>
-                                <div id="przyciszczek2">
-                                    <input type="submit" id="przeslij" value="przeslij" style="width: 100px; height: 30px;">
-                                </div>                                 
                             </div>
-                        </div>
-                    </fieldset>
-                </form>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
+        </div>
+        <div id="reklama">
+            <img src="img/reklama2.jpg">
         </div>
     </div>
     <script src="skrypt.js"></script>

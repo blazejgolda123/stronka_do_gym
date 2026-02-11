@@ -10,7 +10,7 @@ ktoraOpcja.addEventListener("click", function(){
     else{
         const option=zmienna.value;
         if (option=="trening"){
-            ekran_dodaj_trening.style.display="block";
+            ekran_dodaj_trening.style.display="flex";
             ekran.style.display="none";
         }
     }
@@ -24,16 +24,18 @@ wstecz.forEach(cofnij=>{
 const poniedzialek=document.getElementById("poniedzialek");
 const sroda=document.getElementById("sroda");
 const piatek=document.getElementById("piatek");
-const zmien=document.querySelectorAll('input[name="ktoryDzien"]');
-zmien.forEach(radio=>{
-    radio.addEventListener('click', function(){
+const zmien=document.getElementById("dzien_tyg");
+const panel=document.getElementById("dodaj");
+zmien.addEventListener('click', function(){
         const day=this.value;
         poniedzialek.style.display = 'none';
         sroda.style.display        = 'none';
         piatek.style.display="none";
         if (day=="poniedzialek")
         {
-            poniedzialek.style.display="block";
+            poniedzialek.style.display="flex";
+            panel.style.display="flex";
+
         }
         if (day=="sroda")
         {
@@ -43,5 +45,14 @@ zmien.forEach(radio=>{
         {
             piatek.style.display="block";
         }
-    });
 });
+const cwiczenie=document.getElementById("cwiczenie");
+cwiczenie.addEventListener('click', function() {
+    const zmienna=cwiczenie.value;
+    if (zmienna=="dipy")
+    {
+        
+    }
+    
+})
+
